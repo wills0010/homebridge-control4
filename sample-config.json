@@ -13,7 +13,7 @@
   "accessory":"Control4",
   "name":"Master Blinds",
   "service":"Blinds",
-  "base_url":"http://192.168.6.9:8080/608",
+  "base_url":"https://192.168.1.104:8080/63882",
   "switchHandling":"realtime",
   "refresh_interval":900000,
   "manufacturer":"Control4",
