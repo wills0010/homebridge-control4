@@ -39,9 +39,9 @@ Basic configuration sample:
 "accessories": [ 
 {
   "accessory":"Control4",
-  "name":"Kitchen Lights",
-  "service":"Dimmer",
-  "base_url":"http://YOUR_CONTROL4_IP:PORT/DEVICE_ID",
+  "name":"Sunningdale",
+  "service":"homebridge",
+  "base_url":"http://192.168.1.104:8080/63882",
   "has_level_control":"yes",
   "switchHandling":"realtime",
   "brightnessHandling":"realtime",
