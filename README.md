@@ -30,18 +30,18 @@ fan speed controllers, blinds, motion sensors, locks, and security systems.
 
 # Configuration
 
-The configuration for compatible control4 devices will be automatically output by the Varietas Software
-Control4 homebridge driver.  See documentation with that driver for details.
+## Quick Start
 
-Configuration sample:
+**IMPORTANT:** You MUST change the `base_url` parameter to match your Control4 system!
 
- ```
+Basic configuration sample:
+```json
 "accessories": [ 
 {
   "accessory":"Control4",
-  "name":"Kitchen Lights",
-  "service":"Dimmer",
-  "base_url":"http://192.168.1.201:8081/349",
+  "name":"Sunningdale",
+  "service":"homebridge",
+  "base_url":"http://192.168.1.104:8080/63882",
   "has_level_control":"yes",
   "switchHandling":"realtime",
   "brightnessHandling":"realtime",
@@ -49,5 +49,23 @@ Configuration sample:
   "manufacturer":"Control4",
   "model":"ldz-102-w"
 }
-    ]
+]
+```
+
+## Detailed Configuration Guide
+
+For complete configuration instructions including all device types and options, see [CONFIGURATION.md](CONFIGURATION.md).
+
+## What You Need to Change
+
+1. **`base_url`** - Replace with your Control4 controller's IP, port, and device ID
+   - Format: `http://[CONTROL4_IP]:[PORT]/[DEVICE_ID]`
+   - Example: `http://192.168.1.201:8081/349`
+
+2. **`name`** - Give your device a meaningful name
+
+3. **`service`** - Set the device type: Switch, Light, Dimmer, Blinds, Thermostat, etc.
+
+The configuration for compatible Control4 devices can be automatically output by the Varietas Software
+Control4 homebridge driver. See documentation with that driver for details.
 
