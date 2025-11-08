@@ -41,7 +41,7 @@ Configuration sample:
   "accessory":"Control4",
   "name":"Kitchen Lights",
   "service":"Dimmer",
-  "base_url":"http://192.168.1.201:8081/349",
+  "base_url":"http://192.168.1.104:8080/349",
   "has_level_control":"yes",
   "switchHandling":"realtime",
   "brightnessHandling":"realtime",
